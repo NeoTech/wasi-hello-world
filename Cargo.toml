@@ -1,0 +1,15 @@
+[package]
+name = "wasi-hello-world"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "wasi-run"
+path = "src/run.rs"
+
+[dependencies]
+anyhow = "1.0.70"
+wasmtime = "7.0.0"
+wasmtime-wasi = "7.0.0"
